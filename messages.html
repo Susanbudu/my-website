@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect People with Companies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #0056b3;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 400px;
+            margin: 20px auto;
+            background: #f9f9f9;
+        }
+
+        .profile-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .profile-card h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .profile-card p {
+            font-size: 1rem;
+            color: #555;
+            text-align: center;
+        }
+
+        .message-form {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background: #f1f1f1;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .message-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .message-form input, .message-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .message-form button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .message-form button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Connect with Companies</h1>
+    </header>
+    <nav>
+        <a href="thirdpage.html">Profiles</a>
+        <a href="secondpage.html">Companies</a>
+        <a href="report.html">Home</a>
+        <a href="myprofile.html">My Profile</a>
+    </nav>
+
+    <div class="container">
+        <section id="my-profile">
+            <h2 class="section-title">My Profile</h2>
+            <div class="profile-card">
+                <img src="IMG-20230807-WA0004.jpg" alt="Budu Susan Selorm">
+                <h2>Budu Susan Selorm</h2>
+                <p>Web Developer & Designer</p>
+                <p>"Passionate about crafting intuitive digital experiences and connecting people through technology."</p>
+            </div>
+
+            <form class="message-form" method="post" action="#">
+                <h3>Send Me a Message</h3>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Connect with Companies. All rights reserved.</p>
+    </footer>
+</body>
+</html>
